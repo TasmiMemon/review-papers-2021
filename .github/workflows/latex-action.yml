@@ -11,8 +11,14 @@ jobs:
         with:
           working_directory: gw-physics-and-ligo
           root_file: main.tex
-      - name: Release PDF Document
+      - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
           name: PDF
           path: gw-physics-and-ligo/main.pdf
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: gw-physics-and-ligo/main.pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
