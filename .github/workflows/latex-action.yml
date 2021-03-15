@@ -18,6 +18,7 @@ jobs:
           path: gw-physics-and-ligo/main.pdf
       - name: Release
         uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
         with:
           files: gw-physics-and-ligo/main.pdf
         env:
