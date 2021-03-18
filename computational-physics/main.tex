@@ -1,5 +1,10 @@
 \documentclass[12pt, a4paper]{article}
-
+\usepackage[top=2cm,
+            bottom=2cm,
+            left=2.5cm,
+            right=2.5cm,
+            headsep=10pt,
+            a4paper]{geometry} % Page margins
 
 \title{Numerical Simulations of Planet formations in the Universe}
 \author{Will be updated in final edit}
@@ -9,6 +14,10 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{tikz}
+\usepackage[english]{babel}
+\usepackage{biblatex}
+
+\addbibresource{sample.bib}
 
 %add your work in form of folders and use \input{folder_name/file_name} 
 
@@ -16,23 +25,25 @@
 \maketitle
 
 \section{Abstract}
-\input{Abstract/keplerabstract}
+\input{keplerabstract}
 
 
 \section{Introduction}
-\input{Introduction/keplerintro}
+\input{keplerintro}
 
 
 \section{Methods}
-\input{Methods/keplermethod}
+\input{keplermethod}
 
 \section{Results}
-\input{Results/Kepler results}
+\input{Kepler results}
 
 \section{Conclusion}
 Conclusion will be edit at last for whole review paper
 
-\bibliography{sample.bib}
+Let us cite paper  and our paper \cite{Lines_2014}
+
+\printbibliography
 
 
 \end{document}
