@@ -12,6 +12,9 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{authblk}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{verbatim}
 
 \author[1]{Sagar JC}
 \author[1]{Aditya Srivatsa}
@@ -49,6 +52,15 @@
 \end{center}
 
 \input{0 Abstract.tex/abstract}
+
+\providecommand{\keywords}[1]
+{
+  \small	
+  \textbf{\textit{Keywords---}} #1
+}
+
+\keywords{General Relativity, Space time, Tensors, indices, Field equations, Wave equation, Polarization, Energy Flux, Doppler effect, Inverse square law, Inspiral mechanism, Black holes, Neutron stars, Pulsars, Add key words here relating to ur topic}
+\pagebreak
 
 \section{Introduction}
 \input{1 Introduction.tex/1.1 general relativity}
