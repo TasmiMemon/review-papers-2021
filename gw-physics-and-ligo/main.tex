@@ -4,17 +4,12 @@
 \title{\textbf{\Huge Gravitational Wave Physics and LIGO}}
 
 
-\usepackage{amsmath}
-\usepackage{tensor}
-\usepackage{gensymb}
-\usepackage{graphicx}
-\usepackage{hyperref}
+\usepackage{amsmath, tensor, gensymb, graphicx, hyperref, authblk, amsfonts, amssymb, verbatim}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage{authblk}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{verbatim}
+\usepackage[english]{babel}
+\usepackage[backend=biber,style=alphabetic,sorting=ynt]{biblatex}
+\addbibresource{bibliography.bib}
 
 \author[1]{Sagar JC}
 \author[1]{Aditya Srivatsa}
@@ -114,7 +109,6 @@
 \input{10 Conclusion.tex/10.2 Uses in future}
 \input{10 Conclusion.tex/10.3 Outcome of paper}
 
-\section{References}
-\input{11 References}
+\printbibliography
 
 \end{document}
