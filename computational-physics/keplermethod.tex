@@ -1,1 +1,14 @@
-Methods here
+The authors simulate planetesimal and binary interactions using the parallelized gravitational N-body code PKDGRAV in the University of Bristol’s Advanced Computing Research
+Centre. But as the simulations can get computationally expensive, they limit the resolution of the planetesimal disk to N = $10^6$ particles so as to be able to get statistically confident conclusions in a practical time frame
+
+\subsection{Initial Conditions}
+ The authors develop three simulations; two of which are of a circumbinary disk representative of the Kepler-34 system(ie., inner and outer disk boundaries include the current location of Kepler-34(AB)b) but vary in the masses of planetesimals by a factor of 1000 in order to determine the effect of inter-planetesimal gravity on the collision outcome and the third is of a control simulation around a single star using the same time step and disk parameters to set a benchmark for conditions known to sustain planetesimal accretion. 
+\\
+The simulations are run with short time steps for over thousnads of orbits as the binary system has a high eccentricity and low orbital period. The simulations are started with unperturbed planetesimal disks. The disk around the binary perturbs from the initial eccentricity distribution into a eccentricity wave structure within 25 orbits. After over 1000 orbits it reaches a quasi steady state with low and high eccentricity planetesimals on crossing orbits
+It is at this point that they turn on collisions and allow the planetesimals to collisionally evolve.
+
+
+\subsection{Collision Model}
+For this the authors use the collision model EDACM which has been integrated into PKDGRAV and can handle a variety of collision outcomes. Analytic determination of the outcome provides substantial improvements in computational efficiency and outcome accuracy and is done using a series of scaling laws which require only the collider impact velocity, impact parameter, mass ratio, and two fixed material property parameters.
+\\
+After collisions, fragments with mass less than $m_0 = 1.7 \times 10^{21}$ g are not resolved and are put into one of 10 radial bins depending on the colliders location, in order to maintain a practical value of N. These unresolved debris do not offer friction to the resolved planetesimals, although the total momentum of the system is conserved in the accretion process.
