@@ -1,7 +1,6 @@
 \documentclass[11pt, a4paper]{article}
 \usepackage[a4paper, total={6in, 9.5in}]{geometry}
 
-\title{\textbf{\Huge Gravitational Wave Physics and LIGO}}
 
 
 \usepackage{amsmath, tensor, gensymb, graphicx, hyperref, authblk, amsfonts, amssymb, verbatim, wrapfig}
@@ -10,105 +9,32 @@
 \usepackage[english]{babel}
 \usepackage[bottom]{footmisc}
 \usepackage[sorting = none]{biblatex}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=black}
+\urlstyle{same}
+
+
 
 \addbibresource{bibliography.bib}
 
-\author[1]{Sagar JC}
-\author[1]{Aditya Srivatsa}
-\author[1]{Ajith U Shanbhag}
-\author[2]{Kushal J}
-\author[3]{Hardik Medhi}
-\author[4]{Bhavya Goradia}
-\author[5]{Kshitija Kshirsagar}
-\author[6]{Tasmi Memon}
-\author[7]{Samrudhi R Kanjarpane}
-\author[8]{Ajay Atwal}
-\author[9]{Tanay}
 
 
-\affil[1]{St. Joseph's College, Bengaluru}
-\affil[2]{Christ Junior College, bengaluru}
-\affil[3]{REVA University, Bengaluru}
-\affil[4]{KJ Somaiya College of Engineering, Mumbai}
-\affil[5]{Institute of Science, Nagpur}
-\affil[6]{Maharaja Sayajirao University, Vadodara}
-\affil[7]{Poornaprajna College, Udupi}
-\affil[8]{University of Hyderabad}
-\affil[9]{Mumbai University, Mumbai}
+
 
 
 \renewcommand\Authands{and}
 
-\date{\today}
+
 
 \begin{document}
-\maketitle
-
-\section*{Acknowledgement}
-\input{Acknowledgement}
-
-\pagebreak
-\begin{center}
-    \section*{Abstract}
-\end{center}
-
-\input{0 Abstract}
-
-\providecommand{\keywords}[1]
-{
-  \small	
-  \textbf{\textit{Keywords---}} #1
-}
-
-\keywords{General Relativity, Space time, Tensors, indices, Field equations, Wave equation, Polarization, Energy Flux, Doppler effect, Inverse square law, Inspiral mechanism, Black holes, Neutron stars, Pulsars, Add key words here relating to ur topic}
-\pagebreak
-
-\tableofcontents
-\pagebreak
-
-\section{Introduction}
-\input{1 Introduction}
-
-\section{Linearized theory of Gravitational waves}
-\input{2 Linearized_theory}
-
-\section{Properties of Gravitational waves}
-\input{3 Properties.tex/3.0 properties_intro}
-\input{3 Properties.tex/3.1 Polarization of gw} 
-\input{3 Properties.tex/3.2 Effect of gw on object}
-\input{3 Properties.tex/3.3 Energy transported}
-
-\section{Sources of Gravitational waves}
-\input{4 Source.tex/4.0 source_intro} 
-\input{4 Source.tex/4.1 Single accelerating object}
-\input{4 Source.tex/4.2 Revolving binary system}
-\input{4 Source.tex/4.3 Neutron star collission}
-\input{4 Source.tex/4.4 PBH}
-
-\section{Types of Gravitational Waves}
-\input{5 Types}
-
-\section{Why study Gravitational Waves}
-\input{6 Importance}
 
 \section{Indirect Evidences of Gravitational Waves}
-\input{7 Indirect_evidence}
+\input{gravitational waves}
 
-\section{Direct search for Gravitational waves}
-\input{8 LIGO.tex/8.0 Ligo_intro}
-\input{8 LIGO.tex/8.1 Princple}
-\input{8 LIGO.tex/8.2 Construction}
-\input{8 LIGO.tex/8.3 Noice_cancellation}
-\input{8 LIGO.tex/8.4 Working}
 
-\section{Detection of Gravitational waves using LIGO }
-\input{9 Detection_by_ligo.tex/9.1 First Observation}
-\input{9 Detection_by_ligo.tex/9.2 Recent Observation}
-
-\section{Conclusion}
-\input{10 Conclusion.tex/10.1 Advancements in Ligo}
-\input{10 Conclusion.tex/10.2 Uses in future}
-\input{10 Conclusion.tex/10.3 Outcome of paper}
 
 \printbibliography
 \end{document}
